@@ -1,0 +1,11 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {1}Introduction}{1}
+\contentsline {subsection}{\numberline {1.1}The CMA package}{1}
+\contentsline {subsection}{\numberline {1.2}The data for the examples}{5}
+\contentsline {paragraph}{Two-class vs multi-class classifiers}{6}
+\contentsline {section}{\numberline {2}Building and validating the predictors}{6}
+\contentsline {subsection}{\numberline {2.1}Creating the learning datasets}{6}
+\contentsline {subsection}{\numberline {2.2}Selecting genes}{7}
+\contentsline {subsection}{\numberline {2.3}Hyperparameter tuning}{12}
+\contentsline {subsection}{\numberline {2.4}Classification}{12}
+\contentsline {subsection}{\numberline {2.5}Classifiers comparison}{13}
