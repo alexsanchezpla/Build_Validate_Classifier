@@ -68,7 +68,7 @@ Department d'Estadística. Universitat de Barcelona}
 \tableofcontents
 
 <<include=TRUE, echo=FALSE, message=FALSE>>=
-opts_chunk$set(fig.path='images/grafic', cache=TRUE, tidy=FALSE, dev='pdf')
+opts_chunk$set(fig.path='images/grafic', cache=FALSE, tidy=FALSE, dev='pdf')
 @
 
 
@@ -244,7 +244,7 @@ There are different schemes for splitting the samples into test and train subset
 
 <<workflowParameters>>=
 #### NOTA: AL FER EL CÀLCUL DEFINITIU CONVE AUGMENTAR EL NOMBRE D'ITERACIONS. (per exemple a 1000)
-numIter <- 10
+numIter <- 100
 numFold <- 5
 learnSetNames <- c("fiveFold", "MCCV")
 set.seed(1234567)
@@ -418,7 +418,7 @@ s3 <- rep(c(rep(2,5), rep(5,5),rep(10,5), rep(25,5)),6)
 s4 <- rep(classifierNames, 24)
 s <- paste(s1,s2,s3,s4, sep=".")
 
-compClassifs <- compare(classifs,  measure = compMeasures)
+compClassifs <- compare(classifs,  measure = compMeasures, plot=TRUE)
 
 resultsClassif <- data.frame(CrossVal=s1, VarSel=s2, 
                              numGenes=s3, Classif=s4,compClassifs)
